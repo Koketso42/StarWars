@@ -1,0 +1,49 @@
+<!--
+
+   @author: Koketso Gift Matlhatsi
+   @technical-support:
+       email: Koketso42@gmail.com
+       phone: 071 530 2436
+
+   @page-info:
+
+-->
+
+<ion-view cache-view="false" view-title="Details">
+    <ion-content class="padding background" scroll="true">
+        <div class="padding">
+        <div class="card padding stable-bg transparent-9">
+            <div class="list">
+                <b class="dark">Person's Details</b>
+                <hr class="separator" />
+                <ion-list class="dark-bg">
+                    <div class="item item-icon-left dark no-background no-borders">
+                        <i class="icon ion-person dark" style="font-size: 31px !important;"></i>
+                        <span class="text-note"><b>Person Name:</b> <p>{{ personObj.name || 'N/A' }}</p></span>
+                    </div>
+                    <div class="item item-icon-left dark no-background no-borders">
+                        <i class="icon ion-levels dark" style="font-size: 31px !important;"></i>
+                        <span class="text-note"><b>Height:</b> <p>{{ personObj.height || 'N/A' }}</p></span>
+                    </div>
+                    <div class="item item-icon-left dark no-background no-borders">
+                        <i class="icon ion-levels dark" style="font-size: 31px !important;"></i>
+                        <span class="text-note"><b>Mass:</b> <p>{{ personObj.mass || 'N/A' }}</p></span>
+                    </div>
+                    <div class="item item-icon-left dark no-background no-borders">
+                        <i class="icon ion-link dark" style="font-size: 31px !important;"></i>
+                        <span class="text-note"><a href="" ng-click="homeWorld(personObj.homeworld)">View Home World</a></span>
+                    </div>
+                    <div class="item item-icon-left dark no-background no-borders">
+                        <i class="icon ion-link dark" style="font-size: 31px !important;"></i>
+                        <span class="text-note"><a href="" ng-click="species((personObj.species)[0])">View Species</a></span>
+                    </div>
+                    <div class="item item-icon-left dark no-background no-borders">
+                        <i class="icon ion-link dark" style="font-size: 31px !important;"></i>
+                        <span class="text-note"><a href="" ng-click="starships((personObj.starships)[0])">View Starships</a></span>
+                    </div>
+                </ion-list>
+            </div>
+        </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,294 @@
+/**
+ *  @author: Koketso Gift Matlhatsi
+ *  @technical-support:
+ *      email: Koketso42@gmail.com
+ *      phone: 071 530 2436 
+ *      
+ *  @page-info:
+ *  
+ *      This a custom css for the entire app
+ */
+
+/*  page backround and config   */
+
+    * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        font-size: 28px !important;
+    }
+
+    ion-content {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .background {
+        background: url(../img/background.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+/*  page backround and config   */
+
+/*   map and panel  */
+
+    #map {
+        height: 280px;
+        width: auto;
+        margin: 27px !important;
+        box-shadow: 2px 2px 2px 2px;
+    }
+
+    #panel {
+        width: 100% !important;
+        padding: 2px !important;
+        box-shadow: 2px 2px 2px 2px !important;
+    }
+
+/*   map and panel  */
+
+/*  logo  */
+
+    .logo {
+        width: 70%;
+        margin-top: 25%;
+    }
+
+/*  logo  */
+
+/*  inputs  */
+
+    input[type=text], input[type=password], input[type=number], input[type=date], input[type=time] {
+        width: 100% !important;
+        padding-left: 12px !important;
+        font-weight: bold !important;
+        border-radius: 2px !important;
+    }
+
+    button {
+        border-radius: 2px !important;
+    }
+
+/*  inputs  */
+
+/*  positioning   */
+
+    .bottom-fixed {
+        position: fixed !important;
+        bottom: 0 !important;
+    }
+
+    .padding-top {
+        padding-top: 50px !important;
+    }
+
+    .padding-bottom {
+        padding-bottom: 90px !important;
+    }
+
+/*  positioning  */
+
+/*  spacing   */
+
+    .no-spacing {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .r-spacing {
+        padding-right: 4%;
+    }
+
+    .l-spacing {
+        padding-left: 4%;
+    }
+
+/*  spacing  */
+
+/*  customize popup dialog  */
+
+    .popup {
+        width: 87% !important;
+        border-radius: 8px !important;
+    }
+
+    .popup-title {
+        font-weight: bold !important;
+    }
+
+    .popup-body {
+        font-weight: normal !important;
+    }
+
+/*  customize popup dialog  */
+
+/* always on top */
+
+    .always-on-top {
+        z-index: 999 !important;
+    }
+
+/* always on top */
+
+/*  sizing  */
+
+    .full {
+        width: 100% !important;
+    }
+
+    .half-page {
+        width: 50% !important;
+    }
+
+    .intitle {
+        font-size: calc(100% + 4px) !important;
+    }
+
+/*  sizing  */
+
+/*  font weight  */
+
+    .bold {
+        font-weight: bold !important;
+    }
+
+    .normal {
+        font-weight: normal !important;
+    }
+
+/*  font weight  */
+
+
+/* text alignments */
+
+    .center {
+        text-align: center !important;
+    } 
+
+    .t-left {
+        text-align: left !important;
+    }
+
+    .left {
+        float: left !important;
+    }
+
+    .right {
+        float: right !important;
+    }
+
+    .t-right {
+        text-align: right !important;
+    }
+
+/* text alignments */
+
+/* border radius */
+
+    .radius-4 {
+        border-radius: 4px;
+    }
+
+/* border radius */
+
+/*  disable background and borders  */
+
+    .no-background {
+        background: none !important;
+    }
+
+    .no-borders {
+        border: none !important;
+    }
+
+/*  disable background and borders  */
+
+    .white {
+        color: #fff !important;
+    }
+
+/*  border lines  */
+
+    .border-bottom-positive {
+        border-bottom: 1px solid #000 !important;
+    }
+
+/*  border lines  */
+
+/*  transparence  */
+
+    .transparent-9 {
+        opacity: 0.9;
+    }
+
+    .transparent-8 {
+        opacity: 0.8;
+    }
+
+    .transparent-7 {
+        opacity: 0.7;
+    }
+
+    .transparent-6 {
+        opacity: 0.6;
+    }
+
+/*  transparence  */
+
+/* hide default scrollbars */
+
+    ::-webkit-scrollbar { 
+        display: none !important; 
+    }
+
+/* hide default scrollbars */
+
+
+/* Smartphones between 420 - 600 sizing */
+
+    @media screen and (max-width: 600px) {
+        
+        /*  page backround and config   */
+
+            * {
+                font-size: 14px !important;
+            }
+
+        /*  page backround and config   */
+
+        /*  logo  */
+
+            .logo {
+                width: 70%;
+                margin-top: 15%;
+            }
+
+        /*  logo  */
+    }
+
+/* Smartphones between 420 - 600 sizing */
+
+/* Phones < 360 sizing */
+
+    @media screen and (max-width: 350px) {
+        
+        /*  page backround and config   */
+
+            * {
+                font-size: 12px !important;
+            }
+
+        /*  page backround and config   */
+
+        /*  logo  */
+
+            .logo {
+                width: 70%;
+                margin-top: 12%;
+            }
+
+        /*  logo  */
+    }
+
+/* Phones < 360 sizing */

@@ -1,0 +1,53 @@
+<!--
+
+   @author: Koketso Gift Matlhatsi
+   @technical-support:
+       email: Koketso42@gmail.com
+       phone: 071 530 2436
+
+   @page-info:
+
+-->
+<ion-view view-title="Star Wars" cache-view="false">
+    <ion-header-bar align-title="left" class="bar-subheader bar-dark item-input-inset">
+        <label class="item-input-wrapper textbox-search">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" placeholder="Search" ng-model="filter">
+        </label>
+    </ion-header-bar>
+    <ion-content class="padding background" scroll="true">
+        <div class="padding padding-bottom">
+            <!-- People List -->
+            <ion-list>
+                <ion-item ng-show="peopleList.length" ng-repeat="person in peopleList | filter:filter" ng-click="personDetails(person)">
+                    <div class="item-icon-left item-icon-right no-background">
+                        <i class="icon ion-person" style="font-size: 31px !important;"></i>
+                        <b>{{ person.name }}</b>
+                        <input type="hidden" ng-init="getSpecies((person.species)[0], $index)" />
+                        <p style="font-size: 10px !important;">{{ person.specieObj.name }}</p>
+                        <i class="icon ion-android-arrow-dropright-circle" style="font-size: 21px !important;"></i>
+                    </div>
+                </ion-item>
+                <p ng-show="!(peopleList | filter:filter).length" class="full center padding assertive" style="font-size: 27px !important;">
+                    <b><span class="icon ion-information-circled"></span> Record not found!</b>
+                </p>
+            </ion-list>
+        </div>
+    </ion-content>
+    <div class="bottom-fixed full dark-bg">
+        <div class="row no-spacing">
+            <div class="col no-spacing">
+                <button class="button button-full button-dark no-spacing" ng-click="loadPageData(previousPageURL, false)" ng-disabled="previousPageURL == null ? true : false">
+                    <span class="l-spacing icon ion-skip-backward"></span>
+                    <span class="l-spacing bold">Previous</span>
+                </button>
+            </div>
+            <div class="col no-spacing">
+                <button class="button button-full button-dark no-spacing" ng-click="loadPageData(nextPageURL, true)" ng-disabled="nextPageURL == null ? true : false">
+                    <span class="l-spacing bold">Next</span>
+                    <span class="l-spacing icon ion-skip-forward"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</ion-view>
